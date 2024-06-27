@@ -1,0 +1,80 @@
+{
+  "name": "vue2-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve",
+    "build": "cross-env NODE_ENV=production webpack",
+    "prepare": "husky install",
+    "commit": "cz",
+    "analyze": "cross-env NODE_ENV=production ANALYZE=ANALYZE webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.20.5",
+    "@babel/eslint-parser": "^7.19.1",
+    "@babel/preset-env": "^7.20.2",
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
+    "babel-loader": "^9.1.0",
+    "commitizen": "^4.2.6",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.7.2",
+    "css-minimizer-webpack-plugin": "^4.2.2",
+    "cz-git": "^1.4.1",
+    "eslint": "^8.29.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-webpack-plugin": "^3.2.0",
+    "html-loader": "^4.2.0",
+    "husky": "^8.0.2",
+    "less-loader": "^11.1.0",
+    "lint-staged": "^13.1.0",
+    "mini-css-extract-plugin": "^2.7.2",
+    "postcss-less": "^6.0.0",
+    "postcss-loader": "^7.0.2",
+    "prettier": "^2.8.1",
+    "style-loader": "^4.0.0",
+    "stylelint": "^14.16.0",
+    "stylelint-config-prettier": "^9.0.4",
+    "stylelint-config-recommended-less": "^1.0.4",
+    "stylelint-config-standard": "^29.0.0",
+    "stylelint-less": "^1.0.6",
+    "stylelint-prettier": "^2.0.0",
+    "terser-webpack-plugin": "^5.3.10",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "element-ui": "^2.15.14",
+    "html-webpack-plugin": "^5.5.0",
+    "postcss-preset-env": "^7.8.3",
+    "vue": "^2.7.16",
+    "vue-loader": "^15.11.1",
+    "vue-template-compiler": "^2.7.14",
+    "webpack-bundle-analyzer": "^4.10.2"
+  },
+  "browserslist": {
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ],
+    "production": [
+      ">0.1%",
+      "not dead",
+      "not op_mini all"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git"
+    }
+  }
+}
