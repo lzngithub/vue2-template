@@ -67,6 +67,12 @@ const config = {
     }),
     new VueLoaderPlugin(),
   ],
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "src"),
+    },
+    mainFields: ["jsnext:main", "browser", "main"],
+  },
   optimization: {
     minimizer: [
       new TerserPlugin({ extractComments: false }),
@@ -115,7 +121,7 @@ if (!isProduction) {
       },
     },
     compress: true,
-    port: 9000,
+    port: 80,
     open: true,
     // 配置反向代理
     proxy: {

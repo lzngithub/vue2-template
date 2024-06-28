@@ -11,6 +11,16 @@ module.exports = {
   },
   rules: {},
   globals: {
-    "window": false
+    window: false,
+  },
+  settings: {
+    "import/resolver": {
+      alias: {
+        map: [
+          ["@", "./src"], // 将'@'路径别名指向./src目录
+        ],
+        extensions: [".js", ".jsx", ".ts", ".tsx"], // 指定可解析的文件扩展名
+      },
+    },
   },
 };

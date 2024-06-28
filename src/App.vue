@@ -1,21 +1,24 @@
 <template>
-  <div>
-    <Home></Home>
+  <div id="app">
+    <router-view class="content"></router-view>
   </div>
 </template>
-<script>
-import Home from "./pages/Home/index.vue";
 
+<script>
 export default {
-  name: "App",
-  components: {
-    Home: Home,
-  },
-  data() {
-    return {
-      count: 1,
-    };
-  },
-};
+  name: 'App',
+}
 </script>
-<style></style>
+
+<style>
+* {
+  padding: 0;
+  margin: 0;
+}
+#app {
+  height: 100vh;
+}
+.content {
+  height: 100%;
+}
+</style>
